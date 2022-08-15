@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: aliceblue;
+  overflow-x: hidden;
+}
+img {
+  width: 100%;
+}
+.container {
+  max-width: 1220px;
+  margin: auto;
+  padding: 0.5rem 1rem;
+}
+#copysuccess {
+  position: fixed;
+  color: #fff;
+  background: #00ba63;
+  padding: 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 5px 5px 10px, -5px -5px 10px;
+  transition: 0.5s;
+  opacity: 1;
+  z-index: 1;
+}
+div.copy {
+  bottom: -50%;
+  left: 50%;
+}
+div.copied {
+  left: 50%;
+  bottom: 5%;
+  opacity: 0;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+}
+nav {
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 0.5rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+nav ul li {
+  cursor: pointer;
+  background-color: antiquewhite;
+  padding: 0.5rem 1rem;
+  margin: 0.2rem;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+nav ul li.active {
+  background-color: aquamarine;
+  border: 1px solid #ddd;
+}
+nav ul li:hover {
+  background-color: aliceblue;
+  border: 1px solid #ddd;
+}
+.gallery h1 {
+  margin-top: 1rem;
+  text-transform: capitalize;
+  color: #2b2b2b;
+}
+.images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0.5rem;
+  align-items: center;
+}
+.images div img {
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+.images div img:hover {
+  border-radius: 5px;
+  box-shadow: rgba(255, 255, 255, 1) 0px 4px 8px;
+  scale: 1.3;
+}
