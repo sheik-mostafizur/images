@@ -17,6 +17,7 @@ const images = [
       "https://i.postimg.cc/qMGP9MLx/scott-unsplash.webp",
       "https://i.postimg.cc/6p5kwJbJ/toa-he-unsplash.webp",
       "https://i.postimg.cc/LsJGYkMx/tyler-unsplash.webp",
+	  "https://i.postimg.cc/d3bZWHtx/ronan-unsplash.jpg",
     ],
   },
 ];
