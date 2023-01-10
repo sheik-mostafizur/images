@@ -57,7 +57,7 @@ function createImgItem(id) {
   // https://picsum.photos/id/${id}/1920/1080
   img.role = "button";
   img.addEventListener("click", function () {
-    let cdn = img.src.replace("/306/180", "/1920/1080");
+    const cdn = img.src.replace("/306/180", "/1920/1080");
     navigator.clipboard.writeText(cdn).then(
       () => {
         const copy = document.getElementById("copysuccess");
