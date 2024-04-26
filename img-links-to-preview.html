@@ -49,7 +49,7 @@
       e.preventDefault();
       const links_area = document.querySelector("#links_area").value;
       const linksData = links_area
-        .split("\n")
+        .split(/[ \n]+/)
         .filter((item) => item !== undefined && item.trim() !== "");
       localStorage.setItem("imgLinks", JSON.stringify(linksData || []));
       showImages(getData());
