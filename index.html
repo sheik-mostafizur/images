@@ -1,53 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="./app.js" defer></script>
-    <title>picsum photos</title>
-  </head>
-  <body>
-    <div id="copysuccess" class="copy">copied</div>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 bg-light p-2">
-          <h2>Specific Image</h2>
-          <b
-            >Click any image and image link copied then you can use this link on
-            your website.</b
-          >
-          <p>
-            Get a specific image by adding /id/{image} to the start of the url.
-          </p>
-          <p class="bg-secondary py-1 px-2 text-light">
-            https://picsum.photos/id/237/1920/1080
-          </p>
-          <p class="bg-white py-1 px-2 text-dark">
-            https://picsum.photos/id/<b>idNumber</b>/<b>widthNumber</b>/<b
-              >heightNumber</b
-            >
-          </p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="./app.js" defer></script>
+  <title>picsum photos</title>
+</head>
+
+<body>
+  <div id="copysuccess" class="copy">copied</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 bg-light p-2">
+        <h2>Specific Image <a href="./img-links-to-preview.html">Image Links to Preview</a></h2>
+        <b>Click any image and image link copied then you can use this link on
+          your website.</b>
+        <p>
+          Get a specific image by adding /id/{image} to the start of the url.
+        </p>
+        <p class="bg-secondary py-1 px-2 text-light">
+          https://picsum.photos/id/237/1920/1080
+        </p>
+        <p class="bg-white py-1 px-2 text-dark">
+          https://picsum.photos/id/<b>idNumber</b>/<b>widthNumber</b>/<b>heightNumber</b>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container sticky-top">
+    <div class="row">
+      <div class="col-12 bg-light p-2">
+        <div class="d-flex justify-content-between" id="prev_next_control">
+          <button class="btn btn-secondary" id="prev">Prev</button>
+          <h2></h2>
+          <button class="btn btn-primary" id="next">Next</button>
         </div>
       </div>
     </div>
-    <div class="container sticky-top">
-      <div class="row">
-        <div class="col-12 bg-light p-2">
-          <div class="d-flex justify-content-between" id="prev_next_control">
-            <button class="btn btn-secondary" id="prev">Prev</button>
-            <h2></h2>
-            <button class="btn btn-primary" id="next">Next</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="root"></div>
-  </body>
+  </div>
+  <div id="root"></div>
+</body>
+
 </html>
