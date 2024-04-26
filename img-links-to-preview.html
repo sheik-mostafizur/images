@@ -68,7 +68,8 @@
 
     function showImages(data = []) {
       const show_images = document.querySelector("#show_images");
-      if (data.length == 0) return show_images.innerHTML = ''
+      if (data.length == 0) return show_images.innerHTML = '';
+      show_images.innerHTML = '';
       data?.forEach((item) => {
         show_images.innerHTML += `<div class="col-lg-3 col-md-4">
     <img src="${item}" alt="" class="w-100 shadow border" />
